@@ -8,7 +8,7 @@ from . import symbols
 from .english_utils.abbreviations import expand_abbreviations
 from .english_utils.time_norm import expand_time_english
 from .english_utils.number_norm import normalize_numbers
-from .japanese import distribute_phone
+# from .japanese import distribute_phone
 
 from transformers import AutoTokenizer
 
@@ -137,6 +137,15 @@ def read_dict():
             line = f.readline()
 
     return g2p_dict
+
+
+def distribute_phone(n_phone, n_word):
+    phones_per_word = [0] * n_word
+    for task in range(n_phone):
+        min_tasks = min(phones_per_word)
+        min_index = phones_per_word.index(min_tasks)
+        phones_per_word[min_index] += 1
+    return phones_per_word
 
 
 def cache_dict(g2p_dict, file_path):
