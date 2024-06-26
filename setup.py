@@ -22,7 +22,7 @@ class PostDevelopCommand(develop):
         os.system('python -m unidic download')
 
 setup(
-    name='melotts',
+    name='melotts_lite',
     version='0.1.2',
     packages=find_packages(),
     include_package_data=True,
