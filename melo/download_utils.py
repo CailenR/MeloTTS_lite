@@ -42,22 +42,27 @@ LANG_TO_HF_REPO_ID = {
 }
 
 def load_or_download_config(locale, use_hf=True, config_path=None):
+    print("load_or_download_config")
+    
     if config_path is None:
         language = locale.split('-')[0].upper()
         if use_hf:
             assert language in LANG_TO_HF_REPO_ID
             config_path = hf_hub_download(repo_id=LANG_TO_HF_REPO_ID[language], filename="config.json")
+            print(f"config_path: {config_path}")
         else:
             assert language in DOWNLOAD_CONFIG_URLS
             config_path = cached_path(DOWNLOAD_CONFIG_URLS[language])
     return utils.get_hparams_from_file(config_path)
 
 def load_or_download_model(locale, device, use_hf=True, ckpt_path=None):
+    print("load_or_download_model")
     if ckpt_path is None:
         language = locale.split('-')[0].upper()
         if use_hf:
             assert language in LANG_TO_HF_REPO_ID
             ckpt_path = hf_hub_download(repo_id=LANG_TO_HF_REPO_ID[language], filename="checkpoint.pth")
+            print(f"checkpoint_Path: {ckpt_path}")
         else:
             assert language in DOWNLOAD_CKPT_URLS
             ckpt_path = cached_path(DOWNLOAD_CKPT_URLS[language])

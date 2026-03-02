@@ -9,3 +9,6 @@ build/
 
 *.zip
 *.wav
+*/audio/*
+*/logs/*
+.vscode/*
