@@ -1,10 +1,11 @@
 <div align="center">
   <div>&nbsp;</div>
-  <img src="logo.png" width="300"/> 
+  <img src="logo.png" width="300"/> <br>
+  <a href="https://trendshift.io/repositories/8133" target="_blank"><img src="https://trendshift.io/api/badge/repositories/8133" alt="myshell-ai%2FMeloTTS | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 
 ## Introduction
-MeloTTS is a **high-quality multi-lingual** text-to-speech library by [MyShell.ai](https://myshell.ai). Supported languages include:
+MeloTTS is a **high-quality multi-lingual** text-to-speech library by [MIT](https://www.mit.edu/) and [MyShell.ai](https://myshell.ai). Supported languages include:
 
 | Language | Example |
 | --- | --- |
@@ -30,12 +31,6 @@ Some other features include:
 
 The Python API and model cards can be found in [this repo](https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md#python-api) or on [HuggingFace](https://huggingface.co/myshell-ai).
 
-## Join the Community
-
-**Discord**
-
-Join our [Discord community](https://discord.gg/myshell) and select the `Developer` role upon joining to gain exclusive access to our developer-only channel! Don't miss out on valuable discussions and collaboration opportunities.
-
 **Contributing**
 
 If you find this work useful, please consider contributing to this repo.
@@ -46,7 +41,7 @@ If you find this work useful, please consider contributing to this repo.
 
 - [Wenliang Zhao](https://wl-zhao.github.io) at Tsinghua University
 - [Xumin Yu](https://yuxumin.github.io) at Tsinghua University
-- [Zengyi Qin](https://www.qinzy.tech) at MIT and MyShell
+- [Zengyi Qin](https://www.qinzy.tech) (project lead) at MIT and MyShell
 
 **Citation**
 ```
