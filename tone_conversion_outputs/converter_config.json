@@ -1,0 +1,9 @@
+{
+  "filter_length": 1024,
+  "sampling_rate": 22050,
+  "hop_length": 256,
+  "win_length": 1024,
+  "gin_channels": 256,
+  "spec_channels": 513,
+  "version": "v2"
+}

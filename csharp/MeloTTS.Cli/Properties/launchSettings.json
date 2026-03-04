@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MeloTTS.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--tgt-se target_se_andrew.json"
+    }
+  }
+}
